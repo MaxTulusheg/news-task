@@ -1,0 +1,15 @@
+@import '~/src/styles';
+
+.image {
+  display: block;
+}
+
+.loaderWrapper {
+  display: flex;
+  position: relative;
+  background-color: $color-gray-100;
+}
+
+.loader {
+  margin: auto;
+}

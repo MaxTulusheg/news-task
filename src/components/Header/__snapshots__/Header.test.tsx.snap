@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correct structure 1`] = `
+<div>
+  <header
+    class="wrapper"
+  >
+    <nav
+      class="navigation"
+    >
+      <a
+        class="link"
+        href="/"
+        title="News"
+      >
+        <img
+          alt="News logo"
+          class="logo"
+          src="logo.svg"
+        />
+      </a>
+    </nav>
+  </header>
+</div>
+`;

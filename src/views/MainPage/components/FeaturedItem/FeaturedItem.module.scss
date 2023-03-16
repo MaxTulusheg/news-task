@@ -1,0 +1,37 @@
+@import '~/src/styles';
+
+.wrapper {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  
+  &:hover {
+    box-shadow: 0 0 10px $color-gray-300;
+    transition: all .1s;
+  }
+}
+
+.image {
+  width: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  
+  @include desktop {
+    min-height: 300px;
+  }
+}
+
+.titleWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  margin: 1rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 50%);
+}

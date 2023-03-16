@@ -1,0 +1,46 @@
+@import '~/src/styles';
+
+.title {
+  font-family: $font-primary;
+  margin: 0;
+}
+
+.h1 {
+  font-size: 1.8rem;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+
+  @include desktop {
+    font-size: 2.5rem;
+  }
+}
+
+.h2 {
+  font-size: 1.4rem;
+
+  @include mobile {
+    font-size: 1.7rem;
+  }
+
+  @include tablet {
+    font-size: 1.8rem;
+  }
+
+  @include desktop {
+    font-size: 2rem;
+  }
+}
+
+.h3 {
+  font-size: 1.5rem;
+
+  @include mobile {
+    font-size: 1.6rem;
+  }
+
+  @include desktop {
+    font-size: 1.8rem;
+  }
+}

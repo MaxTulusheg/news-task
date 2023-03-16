@@ -1,0 +1,49 @@
+@import '~/src/styles';
+
+.wrapper {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $color-bg-primary;
+  box-shadow: 2px 0 8px $color-gray-300;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  padding: .2rem 1rem;
+  margin: 0 auto;
+  height: 40px;
+  max-width: 100%;
+  
+  @include tablet {
+    height: 50px;
+    max-width: 696px;
+  }
+
+  @include desktop {
+    max-width: 960px;
+  }
+
+  @include largeDesktop {
+    max-width: 1120px;
+  }
+}
+
+.link {
+  display: block;
+  height: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  width: auto;
+}

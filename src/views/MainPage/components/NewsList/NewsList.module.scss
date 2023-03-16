@@ -1,0 +1,58 @@
+@import '~/src/styles';
+
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.loader {
+  margin-top: 4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 1rem 0 .5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: $color-gray-500;
+    border: 1px solid $color-gray-500;
+    border-radius: 50%;
+    flex: 0 0 5px;
+  }
+}
+
+.link {
+  display: -webkit-box;
+  font-weight: 500;
+  overflow: hidden;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
